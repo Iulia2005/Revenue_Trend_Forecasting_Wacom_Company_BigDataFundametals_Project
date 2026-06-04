@@ -38,3 +38,4 @@ How can someone else run your code?
 
 Questions: 
 Which genre sells the most games globally?
+Does NA_Sales strongly predict Global_Sales?
