@@ -1,15 +1,15 @@
-# Project Title: Revenue Trend Forecasting - Wacom Company
+# Project Title: Sales Forecasting
 
 ## 1. Project Description
 Provide a brief overview of your project. Explain the problem you are solving and the business context (e.g., "Analyzing Amazon customer reviews to predict sentiment trends").
 
 ## 2. Dataset
-* **Source:** The dataset was created with the help of ChatGPT
-* **Description:** Briefly describe what the data contains (e.g., number of records, key features).
+Source: The dataset was found on kaggle.com (https://www.kaggle.com/datasets/willianoliveiragibin/video-game-sales-analyze)
+Description: This dataset includes 11 columns (Rank, Name, Platform, etc) about Video Game Sales in the world.
 
 ## 3. Technology Stack
 List the tools and libraries used in this project, aligned with the course structure:
-* **Language:** Python 3.x
+Language: Python 3.13.7
 * **Data Processing:** Pandas, PySpark
 * **Storage:** CSV / JSON / NoSQL
 * **Visualization:** Tableau Public / Power BI
