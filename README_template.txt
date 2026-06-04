@@ -35,3 +35,6 @@ How can someone else run your code?
 ## 7. Author
 * **Name:** [Your Name]
 * **Course:** Big Data Fundamentals
+
+Questions: 
+Which genre sells the most games globally?
