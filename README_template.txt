@@ -1,37 +1,34 @@
-========== Project Title: Sales Forecasting ==========
-========== PROJECT STILL IN PROGRESS ========== 
+========== Project Title:Sales Forecasting — Video Game Global Sales ==========
 
 ========== 1. Project Description ========== 
-Provide a brief overview of your project. Explain the problem you are solving and the business context (e.g., "Analyzing Amazon customer reviews to predict sentiment trends").
+This project analyzes worldwide video game sales data between 1980 to 2020, covering 16,598 games across 31 platforms and 12 genres. The goal is to identify sales trends by genre, platform, and region, and to build a predictive model that estimates a game's global sales based on its characteristics and regional performance.
 
 ========== 2. Dataset ========== 
 Source: The dataset was found on kaggle.com (https://www.kaggle.com/datasets/willianoliveiragibin/video-game-sales-analyze)
-Description: This dataset includes 11 columns (Rank, Name, Platform, etc) about Video Game Sales in the world.
+Description: The dataset includes 11 columns (Rank, Name, Platform, Year, Genre, Publisher, NA_Sales, EU_Sales, JP_Sales, Other_Sales, Global_Sales) covering video game sales worldwide from 1980 to 2020.
 
 ========== 3. Technology Stack ========== 
-List the tools and libraries used in this project, aligned with the course structure:
-Language: Python 3.13.7
-Data Processing: Pandas, PySpark
-Storage: CSV / JSON / NoSQL
-Visualization: Tableau Public / Power BI
+Language: Python 3.12.9
+Data Processing: Pandas, PySpark 3.5.3
+Visualization: Power BI
 Version Control: GitHub
 
 ========== 4. Pipeline Architecture ========== 
-Briefly describe the flow of your data:
-1. Data Ingestion: How you connected to the API/Source.
-2. Preprocessing: Key cleaning steps performed (handling nulls, duplicates).
-3. Analysis: Exploratory Data Analysis and Advanced Analytics (Predictive/Text).
-4. Output: The final dashboard/results.
+1. Data Ingestion: Dataset downloaded from Kaggle as a CSV file
+2. Preprocessing: Handled 271 missing Year values (median imputation), 58 missing Publisher values (filled with "Unknown"), removed duplicates, detected outliers using IQR method, and engineered new features (Sales_Gap, JP_Share, Genre_Encoded, Platform_Encoded)
+3. Analysis: EDA revealed Action as the top selling genre and PS2 as the top selling platform. Sales peaked globally around 2008-2009. A Random Forest Regressor was trained to predict Global_Sales using regional sales and game characteristics as features.
+4. Output: Power BI dashboard with 4 visuals — Sales by Genre, Sales by Platform, Sales Trend Over Time, and Top 10 Best Selling Games.
 
 ========== 5. Installation & Usage ========== 
-How can someone else run your code?
-1. Clone the repository: `git clone [Your Bitbucket Link]`
-2. Install dependencies: `pip install -r requirements.txt`
-3. Run the main notebook/script: `jupyter notebook [Your_Filename].ipynb`
+1. Clone the repository: https://github.com/Iulia2005/Sales_Forecating_BigDataFundametals_Project.git
+2. Install dependencies: pip install pandas matplotlib seaborn scikit-learn pyspark jupyter
+3. Run the main notebook/script: jupyter notebook BigData_Project.ipynb
 
 ========== 6. Key Insights ========== 
-Insight 1: [E.g., "The highest volume of sales occurs in Q4."]
-Insight 2: [E.g., "Sentiment analysis shows a 20% increase in positive feedback after the update."]
+Insight 1: Action is the best selling genre with over 1,500 million units sold globally, followed by Sports and Shooter.
+Insight 2: Video game sales peaked around 2008-2009 and have been declining since, likely due to the rise of mobile and digital gaming.
+Insight 3: PS2 is the top selling platform of all time in this dataset, followed by X360 and PS3.
+Insight 4: NA_Sales is the strongest predictor of Global_Sales according to the Random Forest feature importance analysis.
 
 ========== 7. Author ========== 
 Name: Serban Iulia Maria
