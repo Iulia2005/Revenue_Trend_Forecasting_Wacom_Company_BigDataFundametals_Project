@@ -36,5 +36,3 @@ Insight 2: [E.g., "Sentiment analysis shows a 20% increase in positive feedback 
 ========== 7. Author ========== 
 Name: Serban Iulia Maria
 Course: Big Data Fundamentals
-
-Error for pyspark at "Load data into Spark DataFrame"
