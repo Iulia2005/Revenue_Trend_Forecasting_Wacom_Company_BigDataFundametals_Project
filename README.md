@@ -1,4 +1,4 @@
-========== Project Title:Sales Forecasting — Video Game Global Sales ==========
+# Project Title:Sales Forecasting — Video Game Global Sales 
 
 ========== 1. Project Description ========== 
 This project analyzes worldwide video game sales data between 1980 to 2020, covering 16,598 games across 31 platforms and 12 genres. The goal is to identify sales trends by genre, platform, and region, and to build a predictive model that estimates a game's global sales based on its characteristics and regional performance.
