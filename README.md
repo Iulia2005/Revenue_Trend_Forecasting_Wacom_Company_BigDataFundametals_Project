@@ -39,4 +39,5 @@ Insight 4: NA_Sales is the strongest predictor of Global_Sales according to the 
 ========== 7. Author ========== 
 
 Name: Serban Iulia Maria
+
 Course: Big Data Fundamentals
