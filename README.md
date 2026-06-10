@@ -1,4 +1,4 @@
-# Project Title:Sales Forecasting — Video Game Global Sales 
+# Project Title: Sales Forecasting — Video Game Global Sales 
 
 # 1. Project Description 
 
